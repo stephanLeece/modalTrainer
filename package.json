@@ -14,10 +14,8 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"lint": "eslint . --ext .js,.jsx"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
+		"lint": "eslint src/**/*.js",
+		"lint:fix": "eslint --fix src/**/*.js"
 	},
 	"browserslist": {
 		"production": [
@@ -36,6 +34,13 @@
 		"eslint-config-prettier": "^6.6.0",
 		"eslint-plugin-jsx-a11y": "^6.2.3",
 		"eslint-plugin-prettier": "^3.1.1",
+		"husky": "^3.0.9",
 		"prettier": "^1.19.1"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn run lint:fix",
+			"pre-push": "yarn run lint"
+		}
 	}
 }
