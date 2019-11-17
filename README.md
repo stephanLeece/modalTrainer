@@ -1,10 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Workout log app built with react.
 
-Standard Create React App, with added:
+This is worl in progress right now. the readme will be updated when initial functionality is done, and i've got a roadmap of upcoming features ready to go.
 
--   styled components
--   styling reset to avoid those pesky default paddings
--   grid component ready to make some lovely layouts with
--   routing with react-router-dom
--   breakpoints based off of googles material design
--   clearer folder restructuring (to me at least anyway)
+This will be built alongside a back end, probably express / postgres based.
